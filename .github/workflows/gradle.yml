@@ -1,11 +1,11 @@
 
 on:
- schedule:
-   - cron: "*/2 * * * *"
+  schedule:
+    - cron: "*/2 * * * *"
 
 jobs:
   hello-world:
-   runs-on: ubuntu-latest
-   steps:
-     - name: "echo current name"
-       run: echo "the current time is $(date)"
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo current time
+        run: echo "The current time is $(date)"
