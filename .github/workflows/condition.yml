@@ -1,0 +1,16 @@
+name: condition
+on: [push]
+jobs:
+  hello-world:
+  if: github.repository == 'octo-org/octo-repo-prod'
+  runs-on: ubuntu-latest
+  steps:
+    - name: "hello world"
+      run: echo "hello"
+  
+  good-bye:
+  runs-on: ubuntu-latest
+  steps:
+    - name: "good-bye"
+      run: echo "good bye"
+ 
